@@ -1,0 +1,31 @@
+﻿<Window x:Class="EmployeeHours.View.AddEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeHours"
+        xmlns:vm="clr-namespace:EmployeeHours.ViewModel"
+        mc:Ignorable="d"
+        Title="Add New Employee" Height="200" Width="390"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Height="Auto">
+        <StackPanel Margin="5">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label Content="Employee Name : " />
+                <TextBox Name="txtEmployeeName" MinWidth="250" Margin="5,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label Content="Job Desc :             "/>
+                <TextBox Name="txtEmployeejobDesc" MinWidth="250" Margin="5,0,0,0"/>
+            </StackPanel>           
+            <StackPanel>
+                <CheckBox Name="chxIsNightShift" Content="Is Night Shift Employee" IsChecked="False" Margin="115,5,0,0" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+        <Button Name="btnSaveEmployee" Click="btnSaveEmployee_Click" Content=" Confirm Employee "  Margin="5" MaxWidth="250" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Name="btnClose" Click="btnClose_Click" Content="  Close  " Margin="5" MaxWidth="250" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
